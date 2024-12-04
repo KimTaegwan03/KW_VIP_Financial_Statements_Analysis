@@ -13,10 +13,19 @@ class FinDataLoader:
                 
     def get_statement(self, code, year, quarter):
         
-        if os.path.isfile(f"{self.path}/{code}/{code}_{year}.csv"):
-            df_fs = pd.read_csv(f"{self.path}/{code}/{code}_{year}.csv")
+        if os.path.isfile(f"{self.path}/{code}.csv"):
+            df_fs = pd.read_csv(f"{self.path}/{code}.csv")
             
-            return df_fs[df_fs['Quarter'] == quarter]
+            df_fs = df_fs[df_fs['분기'] == quarter]
+            df_fs = df_fs[df_fs['연도'] == year]
+            
+            return df_fs
         else:
-            print(f"파일이 존재하지 않습니다: {self.path}/{code}/{code}_{year}.csv")
+            print(f"파일이 존재하지 않습니다: {self.path}/{code}.csv")
             return pd.DataFrame()
+        
+        
+if __name__ == "__main__":
+    data = FinDataLoader("data")
+    
+    print(data.get_statement("005930",2018,"Q2"))
