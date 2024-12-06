@@ -34,7 +34,7 @@
 #### 기술적지표 + 분기재무제표
 - 일일 기술적지표 데이터에 대해 해당 되는 분기의 재무제표 데이터를 연결 (map_financial_to_price 함수)
 
-## 학습 및 평가
+# 학습 및 평가
 #### 모델
 - Sklearn의 RandomForestRegressor 사용
 
