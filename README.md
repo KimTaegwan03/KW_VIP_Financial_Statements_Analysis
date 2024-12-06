@@ -41,6 +41,10 @@
 #### 종목
 - SK하이닉스(000660)
 
+#### 학습 결과
+- 모델로부터 특징 중요도를 추출함
+![특징중요도](https://github.com/user-attachments/assets/27a4d100-b06b-4f5e-aef6-b60cb86234ea)
+
 #### 평가
 - Valid 데이터에 대한 MSE : 0.0183
 
