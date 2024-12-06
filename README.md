@@ -39,7 +39,11 @@
 - Sklearn의 RandomForestRegressor 사용
 
 #### 종목
-- 삼성전자(005930)
+- SK하이닉스(000660)
 
 #### 평가
 - Valid 데이터에 대한 MSE : 0.0183
+
+#### 테스트
+![SK하이닉스 백테스트 매수 매도](https://github.com/user-attachments/assets/bdc884f3-ae42-47f1-a8bc-a79d117320e1)
+
